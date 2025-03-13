@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Mania</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="text-dark">QUIZ</span
+          ><span class="text-danger fw-bold">Mania</span>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="header">
+        <h1>
+          Welcome to
+          <span class="highlight">QUIZ<span class="logo">Mania</span></span>
+        </h1>
+      </div>
+
+      <!-- Rules Box -->
+      <div class="rules-box">
+        Please read all the rules about this quiz before you start.
+        <a href="#" data-bs-toggle="modal" data-bs-target="#quizRulesModal"
+          >Quiz rules</a
+        >
+      </div>
+
+      <!-- Form -->
+      <form id="quizForm">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            placeholder="Full name"
+            required
+            oninput="validateForm()"
+          />
+        </div>
+      
+        <div class="mb-3">
+          <label class="form-label">Please select topic to continue</label>
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                type="radio"
+                class="btn-check"
+                name="topic"
+                id="topic1"
+                value="js_basics"
+                autocomplete="off"
+                onchange="validateForm()"
+              />
+              <label class="btn btn-outline-primary topic-btn" for="topic1">
+                Javascript Basic
+              </label>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="radio"
+                class="btn-check"
+                name="topic"
+                id="topic2"
+                value="angular_basic"
+                autocomplete="off"
+                onchange="validateForm()"
+              />
+              <label class="btn btn-outline-primary topic-btn" for="topic2">
+                Angular Basic
+              </label>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="radio"
+                class="btn-check"
+                name="topic"
+                id="topic3"
+                value="react_advance"
+                autocomplete="off"
+                onchange="validateForm()"
+              />
+              <label class="btn btn-outline-primary topic-btn" for="topic3">
+                React.js Advance
+              </label>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="radio"
+                class="btn-check"
+                name="topic"
+                id="topic4"
+                value="flutter"
+                autocomplete="off"
+                onchange="validateForm()"
+              />
+              <label class="btn btn-outline-primary topic-btn" for="topic4">
+                Flutter
+              </label>
+            </div>
+          </div>
+        </div>
+      
+        <button type="submit" class="btn start-btn" id="startQuizBtn" disabled>
+          Start Quiz
+        </button>
+      </form>
+    </div>
+
+    <div
+      class="modal fade"
+      id="quizRulesModal"
+      tabindex="-1"
+      aria-labelledby="quizRulesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quizRulesModalLabel">Quiz rules</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              X
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- 10-Second Timer -->
+            <div class="p-2 mb-3 bg-light border rounded">
+              <strong>10-Second Timer</strong>
+              <ul>
+                <li>Each question comes with a 10-second timer.</li>
+                <li>
+                  If you don’t answer within the time limit, the app will
+                  automatically move to the next question.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Manual Navigation -->
+            <div class="p-2 mb-3 bg-light border rounded">
+              <strong>Manual Navigation</strong>
+              <ul>
+                <li>
+                  You can navigate to the next question manually before the
+                  timer expires.
+                </li>
+                <li>
+                  Use the "Next" button to move ahead if you’re ready before the
+                  timer runs out.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Final Score and Performance Message -->
+            <div class="p-2 bg-light border rounded">
+              <strong>Final Score and Performance Message</strong>
+              <ul>
+                <li>
+                  After all questions are answered, your final score will be
+                  displayed.
+                </li>
+                <li>
+                  Based on your performance, you will receive a personalized
+                  message:
+                  <ul>
+                    <li>
+                      <strong>Great job!:</strong> If you score
+                      <strong>above 80%</strong>.
+                    </li>
+                    <li>
+                      <strong>Well done!:</strong> If you score
+                      <strong>between 60% and 80%</strong>.
+                    </li>
+                    <li>
+                      <strong>Keep practicing!:</strong> If you score
+                      <strong>below 60%</strong>.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>

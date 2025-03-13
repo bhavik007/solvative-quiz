@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Result</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/result.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="text-dark">QUIZ</span
+          ><span class="text-danger fw-bold">Mania</span>
+        </a>
+        <div class="user-info">
+          <div id="user-avatar" class="user-avatar"></div>
+          <span id="user-name" class="user-name"></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="result-container" class="text-center mt-5"></div>
+      <button id="retake-btn" class="btn btn-danger mt-4">Retake Quiz</button>
+    </div>
+
+    <script src="javascript/common.js"></script>
+    <script src="javascript/result.js"></script>
+  </body>
+</html>
