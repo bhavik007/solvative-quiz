@@ -1,93 +1,78 @@
-body {
-    background-color: #fafaf5;
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .score-success {
-    color: #28a745;
-    font-size: 40px;
-    font-weight: bold;
-  }
-  
-  .score-fail {
-    color: #dc3545;
-    font-size: 40px;
-    font-weight: bold;
-  }
-  
-  .feedback-success {
-    color: #28a745;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .feedback-fail {
-    color: #dc3545;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .title-success {
-    color: #28a745;
-  }
-  
-  .title-fail {
-    color: #dc3545;
-  }
-  
-  .result-summary {
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    display: inline-block;
-    margin-top: 20px;
-  }
-  
-  #retake-btn {
-    font-size: 18px;
-    padding: 8px 24px;
-    border-radius: 6px;
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-  }
-  
-  #retake-btn:hover {
-    background-color: #c82333;
-  }
+.score-success {
+  color: #28a745;
+  font-size: 40px;
+  font-weight: bold;
+}
 
-  /* Add your custom styles for the result page here */
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-avatar {
-    width: 40px;
-    height: 40px;
-    background-color: #4b286d;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-  }
-  
-  .user-name {
-    font-size: 16px;
-    font-weight: 600;
-    color: #4b286d;
-  }
+.score-fail {
+  color: #dc3545;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.feedback-success {
+  color: #28a745;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.feedback-fail {
+  color: #dc3545;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title-success {
+  color: #28a745;
+}
+
+.title-fail {
+  color: #dc3545;
+}
+
+.result-summary {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#retake-btn {
+  font-size: 18px;
+  padding: 8px 24px;
+  border-radius: 6px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+
+#retake-btn:hover {
+  background-color: #c82333;
+}
+
+/* Add your custom styles for the result page here */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #4b286d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4b286d;
+}

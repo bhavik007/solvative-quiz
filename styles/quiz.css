@@ -1,0 +1,53 @@
+.progress-bar {
+    background-color: #e91e63;
+    height: 5px;
+  }
+
+  .timer-box {
+    background-color: #f4f4f4;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .option-btn {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+  }
+
+  .option-btn:hover {
+    background-color: #ffe6f0;
+    border-color: #e91e63;
+  }
+
+  .option-btn.selected {
+    background-color: #ffe6f0;
+    border-color: #e91e63;
+  }
+
+  .next-btn {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width: 120px;
+    transition: background-color 0.2s;
+  }
+
+  .next-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .skip-link {
+    color: #e91e63;
+    cursor: pointer;
+    margin-left: 20px;
+  }
